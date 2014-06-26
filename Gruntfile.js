@@ -11,7 +11,7 @@ module.exports = function(grunt) {
             sass: {
                 files: ['**/*.{scss,sass}'],
                 tasks: [
-                    'sass',
+                    'sass'
                    // 'autoprefixer',
                    // 'cssmin'
                     ]
@@ -41,6 +41,11 @@ module.exports = function(grunt) {
             }
         },
 
+
+        //
+        // Auto Prefixer commented out due to problems with dependencies and not functioning correctly
+        // It was commented when I forked it I soon realized why
+
         // autoprefixer
         // autoprefixer: {
         //     options: {
@@ -55,6 +60,10 @@ module.exports = function(grunt) {
         //     },
         // },
 
+        //
+        // CSS min commented out in lieu of taking time to set up a development environment task
+        // For me it's easier to just modify the sass task above when I go into production.
+        //
         // css minify
         // cssmin: {
         //     options: {
@@ -93,7 +102,7 @@ module.exports = function(grunt) {
                         'assets/js/source/plugins.js',
                         'assets/js/vendor/navigation.js',
                         'assets/js/vendor/skip-link-focus-fix.js',
-                        'assets/js/vendor/yourplugin/yourplugin.js',
+                        'assets/js/vendor/yourplugin/yourplugin.js'
                     ]
                 }
             },
@@ -126,7 +135,7 @@ module.exports = function(grunt) {
                     dest: '/images/'
                 }]
             }
-        },
+        }
 
     });
 
